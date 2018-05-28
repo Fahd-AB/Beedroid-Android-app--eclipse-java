@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Délai d&apos;envois de position"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Suivre un ami"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="5dp"
+        android:background="@color/bestgrey"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/identifiant"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+             android:layout_marginTop="5dp"
+               android:layout_marginBottom="5dp"
+            android:background="@drawable/fieldfirst"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/abc_text_size_small_material" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView4"
+               android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Identifiant de l&apos;appareil"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/x"
+        android:layout_marginTop="5dp"
+        android:background="@color/bestgrey"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/minute"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+             android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp"
+            android:background="@drawable/fieldfirst"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="@dimen/abc_text_size_small_material" >
+
+            <requestFocus />
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/minute"
+            android:text=" Minutes"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignRight="@+id/valider"
+        android:layout_below="@+id/valider"
+        android:text="               "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/valider"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btnfirst"
+        android:text="Valider" />
+
+    <TextView
+        android:id="@+id/log_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Etat de l&apos;application"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+<RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/log_msg"
+        android:layout_marginTop="5dp"
+        android:background="@color/bestgrey"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    <ToggleButton
+        android:id="@+id/etatapp12"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+         android:layout_marginTop="5dp"
+       android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bgtoggle"
+        android:button="@null"
+        android:textOff="  "
+        android:textOn=" " />
+     </RelativeLayout>
+</RelativeLayout>

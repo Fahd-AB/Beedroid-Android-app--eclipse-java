@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.exa.test.MessageActivity">
+
+     <RelativeLayout
+          android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+         android:layout_width="280dp"
+         android:layout_height="200dp"
+         android:background="@color/bestgrey" >
+
+         <TextView
+             android:id="@+id/log_msg"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="15dp"
+             android:text="BeeDroid"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="@color/darkBlue" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/log_msg"
+             android:layout_below="@+id/log_msg"
+             android:layout_marginTop="10dp"
+             android:text="Message du propriètaire de l&apos;appareil :"
+             android:textAppearance="?android:attr/textAppearanceSmall"
+             android:textColor="@color/darkBlue" />
+
+         <EditText
+             android:id="@+id/messageplace"
+             android:layout_width="240dp"
+             android:layout_height="80dp"
+             android:layout_below="@+id/textView2"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="18dp"
+             android:background="@drawable/messagefield"
+             android:ems="10"
+             android:inputType="textMultiLine"
+             android:padding="5dp"
+             android:gravity="center"
+             android:textSize="@dimen/abc_text_size_small_material" >
+
+             <requestFocus />
+         </EditText>
+
+         <Button
+             android:id="@+id/ok_btn"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="70dp"
+             android:layout_height="30dp"
+             android:layout_marginTop="5dp"
+             android:layout_marginBottom="5dp"
+             android:layout_below="@+id/messageplace"
+             android:layout_centerHorizontal="true"
+             android:background="@drawable/btnfirst"
+             android:text="Ok" />
+         
+      </RelativeLayout>
+    
+    
+    
+    
+    
+    
+    
+    
+</RelativeLayout>

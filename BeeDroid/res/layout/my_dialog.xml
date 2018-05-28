@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/TextViewUSB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Activer ou désactiver USB"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ToggleButton
+        android:id="@+id/usb"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/TextViewUSB"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bgtoggle"
+        android:button="@null"
+        android:textOff="  "
+        android:textOn=" " />
+    
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Activer ou désactiver Bluetooth"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ToggleButton
+        android:id="@+id/etatapp12"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/usb"
+        android:layout_below="@+id/x"
+        android:background="@drawable/bgtoggle"
+        android:button="@null"
+        android:textOff="  "
+        android:textOn=" " />
+
+    <Button
+        android:id="@+id/cancel"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/etatapp12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btnfirst"
+        android:text="Valider" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancel"
+        android:layout_centerHorizontal="true"
+        android:text="   "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

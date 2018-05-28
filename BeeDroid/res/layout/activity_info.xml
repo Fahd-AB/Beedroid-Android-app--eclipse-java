@@ -1,0 +1,143 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.exa.test.InfoActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="22dp"
+        android:text="Aide"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/darkBlue" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="C’est quoi BeeDroid ?"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/darkBlue" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="BeeDroid est une application web androide qui garentie a nos client un maximum de sécurité pour vos données personnelles,si le client à perdu son smartphone androide qui contient  ses données personnelles il peut jamais les récupérer de plus qu’il existe un haut risque que ces données seront à la disposition d’un autre individu,pour cesi  et grace à nottre application vous pouvez récuperer votre smartphone avec une méthode simple et rapide."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="Comment fonctionne BeeDroid ?"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/darkBlue" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:text="BeeDroid est une application web android c&apos;est-à-dire qu’il faut essentiellemnt installer cette application sur votre smartphone android des que vous acheter ce qui vous permet de proteger vos données personnelles,l’installation de l’application sur le mobile permet de fournir un login et un mot de passe,le client utilise son identifiant et son mot de passe pour acceder à son propre espace sur le site web.une fois connecté l’application installé sur le mobile nous permet de controler le smartphone à distance."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+ <TextView
+     android:id="@+id/textView6"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/textView5"
+     android:layout_below="@+id/textView5"
+     android:text="Quels sont les principaux fonctionalités de BeeDroid ?"
+     android:textAppearance="?android:attr/textAppearanceSmall"
+     android:textColor="@color/darkBlue" />
+
+  <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:text="BeeDroid offre divers fonctionalités à ces client,il permet la localisation géographique de votre smartphone androide et de consulter ces  dix derniers positions,il vous permet aussi de gerer plusieurs appareils à la fois ce qui lui rend le plus efficace dans son domaine. En cas de perte du smartphone BeeDroid vous offre divers options tels que l’affichage d’un message sur l’écran du mobile que vous le préciser,un verrouillage du smartphone à distance avec un code que vous le préciser. BeeDroid vous offre aussi un espace de stockage pour récuperer vos données personnelles,ou les supprimer à distance."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+ <TextView
+     android:id="@+id/textView8"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/textView7"
+     android:layout_below="@+id/textView7"
+     android:text="Comment utiliser BeeDroid ?"
+     android:textAppearance="?android:attr/textAppearanceSmall"
+     android:textColor="@color/darkBlue" />
+
+ <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:text="Initialement il faut bien configurer les délais d’envoi de votre position car en cas de perte la mise à jour de votre position sera selon les délais que vous avez fixer à partir de votre application androide installé sur votre smartphone. Il faut aussi activer l’option de connectivité ce qui permet d’interdir  la connectivité via un cable USB ou l’envoi de vos données par Bluetooth. Une fois ces deux options sont bien configurées vous pouvez elimier à 70% le risque de perdre vos données personnelles d’une façon définitive et vous garentie d’eliminer le risque que vos donneés sont à la disposition d’un autre individu et le risque de la disposition de votre vie privé au public."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+ 
+  <TextView
+      android:id="@+id/textView10"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/textView9"
+      android:layout_below="@+id/textView9"
+      android:text="Que je peut faire si j’ai un probleme ?"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:textColor="@color/darkBlue" />
+  
+  <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:text="BeeDroid vous offre un service cient valable 24 heures/24 pour répendre à tout vos questions,vous pouvez utiliser l’option message d’aide  pour contacter l’administrateur pour plus des questions ou bien demander des renseigements. Vous pouvez sigaler un probleme en accédent à l’option Avis,puis choisir la fonction signaler la perte,choisissez le type d’erreur que vous azez rencontrer à propos du site ou à propos l’application mobile,votre message sera traité ulterieurement,cesi nous permet d’améliorer le site et garentie la qualité de services."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+   <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_below="@+id/textView11"
+        android:text="On souhaitent etre toujours a la hauteur de votre confiance et nous sommes heureux de vos servir."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+     <TextView
+         android:id="@+id/textView13"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView12"
+         android:layout_below="@+id/textView12"
+         android:text="BeeDroid.inc © 2015"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:textColor="@color/darkBlue" />
+ 
+</RelativeLayout>
+
+</ScrollView>

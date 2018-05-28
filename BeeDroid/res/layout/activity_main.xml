@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:gravity="fill"
+    android:orientation="vertical"
+    tools:context="com.exa.test.MainActivity" >
+    
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:layout_alignParentLeft="true"
+        map:layout_alignParentRight="true"
+        map:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/TextViewUSB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="BeeDroid"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/darkBlue" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextViewUSB"
+        android:layout_below="@+id/TextViewUSB"
+        android:text="Bienvenue :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+ <RelativeLayout
+     android:layout_width="40dp"
+     android:layout_height="250dp"
+     android:layout_alignLeft="@+id/textView2"
+     android:layout_centerVertical="true"
+     android:gravity="center"
+     android:orientation="horizontal" >
+
+     <Button
+         android:id="@+id/btnconnectivite"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="22dp"
+         android:layout_height="22dp"
+         android:layout_alignLeft="@+id/btnsetting"
+         android:layout_below="@+id/btnsetting"
+         android:layout_marginBottom="20dp"
+         android:background="@drawable/connectivite" />
+
+     <Button
+         android:id="@+id/btnsetting"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="22dp"
+         android:layout_height="22dp"
+         android:layout_alignLeft="@+id/btninfo"
+         android:layout_below="@+id/btninfo"
+         android:layout_marginBottom="20dp"
+         android:background="@drawable/cog" />
+
+     <Button
+         android:id="@+id/deconnexion"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="22dp"
+         android:layout_height="22dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginBottom="20dp"
+         android:background="@drawable/power" />
+
+     <Button
+         android:id="@+id/btncompte"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="22dp"
+         android:layout_height="22dp"
+         android:layout_alignLeft="@+id/deconnexion"
+         android:layout_below="@+id/deconnexion"
+         android:layout_marginBottom="20dp"
+         android:background="@drawable/person" />
+
+     <Button
+         android:id="@+id/btninfo"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="22dp"
+         android:layout_height="22dp"
+         android:layout_alignLeft="@+id/btncompte"
+         android:layout_below="@+id/btncompte"
+         android:layout_marginBottom="20dp"
+         android:background="@drawable/info" />
+    
+ 
+ </RelativeLayout>
+
+ <TextView
+     android:id="@+id/username"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/textView2"
+     android:layout_alignBottom="@+id/textView2"
+     android:layout_centerHorizontal="true"
+     android:text="Small Text"
+     android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
